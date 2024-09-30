@@ -29,7 +29,7 @@ async function checkweather(city){
 
         weather_body.style.display = "flex";
 
-            temperature.innerHTML =`${Math.round(weather_data.main.temp-273.15)}C`;
+            temperature.innerHTML =`${Math.round(weather_data.main.temp-273.15)}°C`;
             description.innerHTML = `${weather_data.weather[0].main}`;
 
             humidity.innerHTML = `${weather_data.main.humidity}%`;
